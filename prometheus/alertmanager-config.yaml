@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alertmanager-config
+  namespace: default
+data:
+  alertmanager.yml: |
+    global:
+      smtp_smarthost: 'smtp.gmail.com:587'
+      smtp_from: 'dubeynishant643@gmail.com'
+      smtp_auth_username: 'dubeynishant643@gmail.com'
+      smtp_auth_password: ''
+      smtp_require_tls: true
+
+    receivers:
+      - name: 'email_notifications'
+        email_configs:
+          - to: 'nishantddubey4@gmail.com'
+            send_resolved: true
+
+    route:
+      receiver: 'email_notifications'
+      group_by: ['alertname']
+      group_wait: 30s
+      group_interval: 5m
+      repeat_interval: 1h

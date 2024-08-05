@@ -1,0 +1,138 @@
+/* styles/globals.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.table-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem; /* Space between table and search bar */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center; /* Center align text */
+}
+
+th {
+    background-color: #767fd1;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.navbar a.active {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Smaller font size */
+    width: 100%;
+    max-width: 250px; /* Limit width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+input[type="text"]::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-size: 14px; /* Match placeholder font size with input text */
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+    background-color: #fff; /* Ensure background is white */
+}

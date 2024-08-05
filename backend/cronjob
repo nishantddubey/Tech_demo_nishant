@@ -1,0 +1,1 @@
+*/2 * * * * python /app/manage.py fetch_stock_data && sleep 30 && python /app/manage.py process_stock_data

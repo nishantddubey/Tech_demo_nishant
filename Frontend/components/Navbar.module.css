@@ -1,0 +1,70 @@
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 1rem 2rem; /* Padding around the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between nav items and logout */
+  }
+  
+  .navList {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 1.5rem; /* Space between menu items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex: 1; /* Allow nav items to take up remaining space */
+  }
+  
+  .navbar li {
+    margin: 0; /* Remove margin from list items */
+  }
+  
+  .navbar a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Slightly bold text */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .navbar a:hover {
+    color: #c06c5e; /* Hover color */
+    transform: scale(1.1); /* Zoom in effect */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for hover effect */
+  }
+  
+  .navbar a.active {
+    color: #4CAF50; /* Active link color */
+    font-weight: 700; /* Bold text for active link */
+  }
+  
+  .userInfo {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    gap: 1rem; /* Space between username and logout button */
+  }
+  
+  .welcomeMessage {
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Slightly bold text */
+  }
+  
+  .logoutButton {
+    background: none; /* No background to blend with links */
+    color: white; /* Text color */
+    border: none;
+    padding: 0; /* No padding to align with other text */
+    cursor: pointer;
+    font-size: 16px; /* Same font size as links */
+    font-weight: 600; /* Same weight as links */
+    transition: color 0.3s, text-shadow 0.3s; /* Smooth transitions */
+  }
+  
+  .logoutButton:hover {
+    color: #c06c5e; /* Hover color */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for hover effect */
+  }
+  
